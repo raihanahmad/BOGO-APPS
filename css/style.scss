@@ -110,6 +110,7 @@
 
     // Navbar BTN
     .btndiv {
+      box-shadow: inset 0 -1px 1px rgba($color: #000000, $alpha: .1), 0px 13px 25px -5px rgba(0, 0, 0, 0.4);
 
       .btn {
         padding: .6rem 1rem .75rem;
@@ -117,6 +118,8 @@
 
         .fas {
           font-size: .8rem;
+          position: relative;
+          bottom: 1px;
         }
       }
     }
@@ -140,8 +143,6 @@
     .btndiv {
       .btn {
         padding: 0.75rem 1.3rem 0.9rem;
-        font-size: 1.5rem;
-        background: linear-gradient(0deg, #ff9640, #ffb746);
       }
     }
   }
