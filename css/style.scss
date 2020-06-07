@@ -12,14 +12,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 0rem 2rem;
 
     // Logo
     #logo {
       font-size: 2rem;
-      line-height: 1;
 
       p:first-child {
+        line-height: 0.9;
+
         span:first-child {
           color: #02e2ec;
         }
@@ -39,6 +40,8 @@
 
       p:last-child {
         color: #ffffff;
+        line-height: 0.9;
+
       }
     }
 
@@ -106,22 +109,40 @@
     }
 
     // Navbar BTN
-    #btndiv {
-      @extend %core-btndiv;
-
+    .btndiv {
 
       .btn {
-        @extend %core-btn;
         padding: .6rem 1rem .75rem;
         font-size: 1rem;
-        background: linear-gradient(0deg, #3392fe, #27d2fe);
 
         .fas {
-          padding-left: 1rem;
           font-size: .8rem;
         }
       }
     }
 
+  }
+
+  // Showcase Content
+  #header-content {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+    #title {
+      font-size: 4.5rem;
+      color: #ffffff;
+      margin-bottom: 2rem;
+    }
+
+    .btndiv {
+      .btn {
+        padding: 0.75rem 1.3rem 0.9rem;
+        font-size: 1.5rem;
+        background: linear-gradient(0deg, #ff9640, #ffb746);
+      }
+    }
   }
 }
