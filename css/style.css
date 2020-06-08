@@ -32,6 +32,7 @@ h4 {
 #logo {
   font-size: 2rem;
   cursor: pointer;
+  font-weight: 800;
 }
 
 #logo p:first-child {
@@ -339,7 +340,7 @@ h4 {
 }
 
 #stories #story-section {
-  background: #ecebf8;
+  background: #f4f4f4;
   height: 430px;
   width: 100%;
   position: absolute;
@@ -497,7 +498,7 @@ h4 {
 }
 
 #bogo-school .container .bogo-school-content {
-  height: 90%;
+  height: 80%;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -513,7 +514,7 @@ h4 {
   position: absolute;
   height: 220px;
   width: 100%;
-  bottom: 2rem;
+  bottom: -7rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 5fr 1fr;
@@ -590,9 +591,23 @@ h4 {
 }
 
 #email-section {
-  height: 400px;
+  height: 360px;
   background: #2f5fff;
   border-top: solid 10px #0035e2;
   border-bottom: solid 10px #0035e2;
+}
+
+#email-section .container {
+  padding: 2rem 2rem 4rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
