@@ -34,7 +34,7 @@ h4 {
 }
 
 // Logo
-#logo {
+.logo {
   font-size: 2rem;
   cursor: pointer;
   font-weight: 800;
@@ -113,29 +113,30 @@ h4 {
       opacity: .7;
     }
   }
+}
 
-  @keyframes hoverbtn {
-    0% {
-      transform: scale(1);
-    }
+// HOVERBTN ANIMATION
+@keyframes hoverbtn {
+  0% {
+    transform: scale(1);
+  }
 
-    25% {
-      transform: scale(1.1);
-    }
+  25% {
+    transform: scale(1.1);
+  }
 
-    50% {
-      transform: scale(.95);
+  50% {
+    transform: scale(.95);
 
-    }
+  }
 
-    75% {
-      transform: scale(1.04);
+  75% {
+    transform: scale(1.04);
 
-    }
+  }
 
-    100% {
-      transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
   }
 }
 
