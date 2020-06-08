@@ -61,6 +61,7 @@ h4 {
 }
 
 .btn {
+  padding: 0.75rem 1.5rem 1rem;
   text-transform: uppercase;
   cursor: pointer;
   display: inline-block;
@@ -333,10 +334,6 @@ h4 {
           justify-content: center;
 }
 
-#main-header #header-content .btndiv .btn {
-  padding: 0.75rem 1.5rem 0.9rem;
-}
-
 #stories {
   background: #ebedfd;
   position: relative;
@@ -387,10 +384,6 @@ h4 {
   color: #5b73b1;
   width: 80%;
   margin-bottom: 2.5rem;
-}
-
-#stories .container #story-div #story-content .btn {
-  padding: 0.75rem 1.5rem 0.9rem;
 }
 
 #stories .container .apps-content {
@@ -516,21 +509,59 @@ h4 {
           justify-content: left;
 }
 
-#bogo-school .container .bogo-school-content .btn {
-  padding: 0.75rem 1.5rem 0.9rem;
-}
-
 #bogo-school .container .app-div {
   background: #ffffff;
   position: absolute;
   width: 100%;
-  top: 2rem;
+  bottom: 2rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr 3fr 1fr)[3];
-      grid-template-columns: repeat(3, 1fr 3fr 1fr);
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-grid-columns: 2fr 5fr 1fr;
+      grid-template-columns: 2fr 5fr 1fr;
+  border-radius: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 12px 0px -7px #e5e5e5, 0px 24px 0px -14px #c5c5c5, 0px 15px 15px -15px rgba(0, 0, 0, 0.2), 0px 20px 20px -20px rgba(0, 0, 0, 0.2), 0px 30px 30px -25px rgba(0, 0, 0, 0.2), 0px 60px 35px -25px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 12px 0px -7px #e5e5e5, 0px 24px 0px -14px #c5c5c5, 0px 15px 15px -15px rgba(0, 0, 0, 0.2), 0px 20px 20px -20px rgba(0, 0, 0, 0.2), 0px 30px 30px -25px rgba(0, 0, 0, 0.2), 0px 60px 35px -25px rgba(0, 0, 0, 0.3);
+}
+
+#bogo-school .container .app-div .app-content > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #5569a8;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#bogo-school .container .app-div .app-content > div p {
+  margin-right: 2rem;
+}
+
+#bogo-school .container .app-div .app-content > div div {
+  color: #ffb621;
+  font-size: 1rem;
+}
+
+#bogo-school .container .app-div .app-content > div div .fas {
+  margin-right: .1rem;
+}
+
+#bogo-school .container .app-div .app-content p:last-child {
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-height: 1.4;
+  color: #45455d;
 }
 /*# sourceMappingURL=style.css.map */
