@@ -14,38 +14,6 @@
     align-items: center;
     padding: 1rem 0rem 2rem;
 
-    // Logo
-    #logo {
-      font-size: 2rem;
-      cursor: pointer;
-
-      p:first-child {
-        line-height: 0.9;
-
-        span:first-child {
-          color: #02e2ec;
-        }
-
-        span:nth-child(2) {
-          color: #fec601;
-        }
-
-        span:nth-child(3) {
-          color: #f52501;
-        }
-
-        span:last-child {
-          color: #b3f00c;
-        }
-      }
-
-      p:last-child {
-        color: #ffffff;
-        line-height: 0.9;
-
-      }
-    }
-
     // Navber Link
     #navlink {
       background: #3d6bff;
@@ -111,7 +79,7 @@
 
     // Navbar BTN
     .btndiv {
-      box-shadow: inset 0 -1px 1px rgba($color: #000000, $alpha: .1), 0px 13px 25px -5px rgba(0, 0, 0, 0.4);
+      box-shadow: inset 0 -1px 1px rgba($color: #000000, $alpha: .1), 0px 15px 30px -5px rgba(0, 0, 0, 0.3);
 
       .btn {
         padding: .6rem 1rem .75rem;
@@ -140,12 +108,12 @@
 
 // Stories Section
 #stories {
-  background: #ebedfd;
+  background: #d4d9f8;
   position: relative;
 
   #story-section {
-    background: #f2f1fb;
-    height: 50vh;
+    background: #ecebf8;
+    height: 430px;
     width: 100%;
     position: absolute;
   }
@@ -307,19 +275,38 @@
     .app-div {
       background: #ffffff;
       position: absolute;
+      height: 220px;
       width: 100%;
       bottom: 2rem;
       display: grid;
       grid-template-columns: 2fr 5fr 1fr;
-      border-radius: 20px;
+      border-radius: 30px;
       justify-content: center;
       align-items: center;
-      box-shadow: 0px 12px 0px -7px #e5e5e5,
-        0px 24px 0px -14px #c5c5c5,
+      box-shadow: 0px 14px 0px -8px #e1e1e1,
+        0px 27px 0px -16px #bbbbbb,
         0px 15px 15px -15px rgba(0, 0, 0, 0.2),
         0px 20px 20px -20px rgba(0, 0, 0, 0.2),
         0px 30px 30px -25px rgba(0, 0, 0, 0.2),
         0px 60px 35px -25px rgba(0, 0, 0, 0.3);
+
+      div:first-child {
+        .app-logo {
+          background-color: #ffffff;
+          position: absolute;
+          padding: 1rem;
+          border-radius: 50%;
+          top: -4rem;
+          left: -2rem;
+
+          img {
+            width: 250px;
+            border-radius: 50%;
+
+          }
+        }
+      }
+
 
       .app-content {
         &>div {
@@ -346,12 +333,33 @@
         }
 
         p:last-child {
-          font-size: 1.6rem;
+          font-size: 1.8rem;
           font-weight: 800;
-          line-height: 1.4;
-          color: #45455d;
+          line-height: 1.33;
+          color: #545569;
+        }
+      }
+
+      div:last-child {
+        .btn {
+          height: 4.2rem;
+          width: 4.2rem;
+
+          .fas {
+            font-size: 1.6rem;
+            padding: 0;
+          }
         }
       }
     }
   }
+}
+
+// Email Section
+#email-section {
+  height: 400px;
+  background: #2f5fff;
+  border-top: solid 10px #0035e2;
+  border-bottom: solid 10px #0035e2;
+
 }

@@ -33,6 +33,38 @@ h4 {
   overflow: hidden;
 }
 
+// Logo
+#logo {
+  font-size: 2rem;
+  cursor: pointer;
+
+  p:first-child {
+    line-height: 0.9;
+
+    span:first-child {
+      color: #02e2ec;
+    }
+
+    span:nth-child(2) {
+      color: #fec601;
+    }
+
+    span:nth-child(3) {
+      color: #f52501;
+    }
+
+    span:last-child {
+      color: #b3f00c;
+    }
+  }
+
+  p:last-child {
+    color: #ffffff;
+    line-height: 0.9;
+
+  }
+}
+
 // ROTATE 360 ANIMATION KEYFRAMES
 @keyframes roro {
   0% {
@@ -51,7 +83,7 @@ h4 {
   background-color: #ffffff;
   padding: 6.8px;
   border-radius: 35px;
-  box-shadow: inset 0 -2px 1px rgba($color: #000000, $alpha: .2), 0px 13px 25px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 -2px 1px rgba($color: #000000, $alpha: .2), 0px 20px 50px -7px rgba(0, 0, 0, .5);
 }
 
 %core-btn {
@@ -138,7 +170,6 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
   border-radius: 50%;
 }
 
