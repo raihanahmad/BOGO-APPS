@@ -268,7 +268,7 @@
           cursor: grab;
 
           img {
-            transform: scale(1.1);
+            transform: scale(1.1) rotate(5deg);
             filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.3));
           }
 
@@ -317,6 +317,15 @@
       }
     }
 
+    // App
+    .app-div {
+      background: #ffffff;
+      position: absolute;
+      width: 100%;
+      top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr 3fr 1fr);
+      justify-content: space-between;
+    }
   }
-
 }
