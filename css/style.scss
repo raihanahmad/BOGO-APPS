@@ -115,6 +115,7 @@
       .btn {
         padding: .6rem 1rem .75rem;
         font-size: 1rem;
+        background: linear-gradient(0deg, #3392fe, #27d2fe);
 
         .fas {
           font-size: .8rem;
@@ -133,12 +134,6 @@
     flex-direction: column;
     align-items: left;
     justify-content: center;
-
-    #title {
-      font-size: 4.5rem;
-      color: #ffffff;
-      margin-bottom: 2rem;
-    }
 
     .btndiv {
       .btn {
@@ -161,7 +156,6 @@
   }
 
   .container {
-    position: relative;
     padding: 8rem 2rem 4rem;
     overflow: unset;
 
@@ -202,7 +196,6 @@
 
         .btn {
           padding: 0.75rem 1.5rem 0.9rem;
-
         }
       }
     }
@@ -272,4 +265,25 @@
 #bogo-school {
   height: 775px;
   background: url(../img/bogoschool-background.jpg) no-repeat center center/cover;
+
+  .container {
+    overflow: unset;
+    padding: 2rem 2rem 4rem;
+    height: 100%;
+
+    // School Content
+    .bogo-school-content {
+      height: 90%;
+      display: grid;
+      align-items: center;
+      justify-content: left;
+
+      .btn {
+        padding: 0.75rem 1.5rem 0.9rem;
+
+      }
+    }
+
+  }
+
 }

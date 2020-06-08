@@ -26,6 +26,7 @@ h4 {
 
 // CONTAINER SETUP
 .container {
+  position: relative;
   max-width: $max-width;
   margin: auto;
   padding: 1rem 2rem;
@@ -48,7 +49,7 @@ h4 {
 %core-btndiv {
   display: inline-block;
   background-color: #ffffff;
-  padding: 6.7px;
+  padding: 6.8px;
   border-radius: 35px;
   box-shadow: inset 0 -2px 1px rgba($color: #000000, $alpha: .2), 0px 13px 25px -5px rgba(0, 0, 0, 0.6);
 }
@@ -61,10 +62,10 @@ h4 {
   border-radius: 35px;
   font-weight: 800;
   color: #ffffff;
-  box-shadow: inset 0 -3px 1px rgba($color: #000000, $alpha: .2), inset 0 -1px 1px rgba($color: #000000, $alpha: .1), 0px 13px 20px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -3px 1px rgba($color: #000000, $alpha: .2), inset 0px 0px 1px 1px rgba($color: #000000, $alpha: .1), inset 0 -1px 1px rgba($color: #000000, $alpha: .1), 0px 13px 20px -5px rgba(0, 0, 0, 0.3);
   border: none;
   text-shadow: 0 2px rgba($color: #000000, $alpha: .2);
-  transition: all 1s;
+  transition: all .3s;
 
   .fas {
     padding-left: 1rem;
@@ -75,7 +76,7 @@ h4 {
     animation: hoverbtn .5s linear;
 
     &:active {
-      box-shadow: inset 0 -10px 5px rgba($color: #000000, $alpha: .1), inset 0 -5px 3px rgba($color: #000000, $alpha: .1), inset 0 -3px 2px rgba($color: #000000, $alpha: .1), 0px 13px 20px -5px rgba(0, 0, 0, 0.3);
+      opacity: .7;
     }
   }
 
@@ -113,15 +114,15 @@ h4 {
 }
 
 .btn-blue {
+  font-size: 1.5rem;
   background: linear-gradient(0deg, #3392fe, #27d2fe);
-
+  box-shadow: inset 0 -2px 1px rgba($color: #0066da, $alpha: 1), inset 0 -4px 1px rgba($color: #026ce5, $alpha: 1), inset 0 -6px 1px rgba($color: #0077ff, $alpha: .6), 0px 7px 6px -4px rgba(42, 140, 252, .8), inset 0px 0px 1px 1px rgba($color: #000000, $alpha: .1);
 }
 
 .btn-orange {
   font-size: 1.5rem;
   background: linear-gradient(0deg, #ff9640, #ffb746);
-  box-shadow: inset 0 -6.5px 1px rgba($color: #000000, $alpha: .1), inset 0 -4px 1px rgba($color: #000000, $alpha: .2), inset 0 -2px 1px rgba($color: #000000, $alpha: .1), 0px 7px 5px -4px rgba(255, 112, 26, 0.7);
-  ;
+  box-shadow: inset 0 -2px 1px rgba($color: #d36001, $alpha: 1), inset 0 -4px 1px rgba($color: #e06602, $alpha: 1), inset 0 -6px 1px rgba($color: #ff7300, $alpha: .6), 0px 7px 6px -4px rgba(255, 112, 26, .8), inset 0px 0px 1px 1px rgba($color: #000000, $alpha: .1);
 
   .fas {
     font-size: 1.2rem;
@@ -138,4 +139,12 @@ h4 {
   justify-content: center;
   font-size: 2rem;
   border-radius: 50%;
+}
+
+
+// Title
+.title {
+  font-size: 5rem;
+  color: #ffffff;
+  margin-bottom: 2.1rem;
 }

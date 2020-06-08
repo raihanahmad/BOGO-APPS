@@ -22,6 +22,7 @@ h4 {
 }
 
 .container {
+  position: relative;
   max-width: 1150px;
   margin: auto;
   padding: 1rem 2rem;
@@ -53,7 +54,7 @@ h4 {
 .btndiv {
   display: inline-block;
   background-color: #ffffff;
-  padding: 6.7px;
+  padding: 6.8px;
   border-radius: 35px;
   -webkit-box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.2), 0px 13px 25px -5px rgba(0, 0, 0, 0.6);
           box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.2), 0px 13px 25px -5px rgba(0, 0, 0, 0.6);
@@ -67,12 +68,12 @@ h4 {
   border-radius: 35px;
   font-weight: 800;
   color: #ffffff;
-  -webkit-box-shadow: inset 0 -3px 1px rgba(0, 0, 0, 0.2), inset 0 -1px 1px rgba(0, 0, 0, 0.1), 0px 13px 20px -5px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 -3px 1px rgba(0, 0, 0, 0.2), inset 0 -1px 1px rgba(0, 0, 0, 0.1), 0px 13px 20px -5px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 -3px 1px rgba(0, 0, 0, 0.2), inset 0px 0px 1px 1px rgba(0, 0, 0, 0.1), inset 0 -1px 1px rgba(0, 0, 0, 0.1), 0px 13px 20px -5px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 -3px 1px rgba(0, 0, 0, 0.2), inset 0px 0px 1px 1px rgba(0, 0, 0, 0.1), inset 0 -1px 1px rgba(0, 0, 0, 0.1), 0px 13px 20px -5px rgba(0, 0, 0, 0.3);
   border: none;
   text-shadow: 0 2px rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .btn .fas {
@@ -85,8 +86,7 @@ h4 {
 }
 
 .btn:hover:active {
-  -webkit-box-shadow: inset 0 -10px 5px rgba(0, 0, 0, 0.1), inset 0 -5px 3px rgba(0, 0, 0, 0.1), inset 0 -3px 2px rgba(0, 0, 0, 0.1), 0px 13px 20px -5px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 -10px 5px rgba(0, 0, 0, 0.1), inset 0 -5px 3px rgba(0, 0, 0, 0.1), inset 0 -3px 2px rgba(0, 0, 0, 0.1), 0px 13px 20px -5px rgba(0, 0, 0, 0.3);
+  opacity: .7;
 }
 
 @-webkit-keyframes hoverbtn {
@@ -136,16 +136,19 @@ h4 {
 }
 
 .btn-blue {
+  font-size: 1.5rem;
   background: -webkit-gradient(linear, left bottom, left top, from(#3392fe), to(#27d2fe));
   background: linear-gradient(0deg, #3392fe, #27d2fe);
+  -webkit-box-shadow: inset 0 -2px 1px #0066da, inset 0 -4px 1px #026ce5, inset 0 -6px 1px rgba(0, 119, 255, 0.6), 0px 7px 6px -4px rgba(42, 140, 252, 0.8), inset 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 -2px 1px #0066da, inset 0 -4px 1px #026ce5, inset 0 -6px 1px rgba(0, 119, 255, 0.6), 0px 7px 6px -4px rgba(42, 140, 252, 0.8), inset 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .btn-orange {
   font-size: 1.5rem;
   background: -webkit-gradient(linear, left bottom, left top, from(#ff9640), to(#ffb746));
   background: linear-gradient(0deg, #ff9640, #ffb746);
-  -webkit-box-shadow: inset 0 -6.5px 1px rgba(0, 0, 0, 0.1), inset 0 -4px 1px rgba(0, 0, 0, 0.2), inset 0 -2px 1px rgba(0, 0, 0, 0.1), 0px 7px 5px -4px rgba(255, 112, 26, 0.7);
-          box-shadow: inset 0 -6.5px 1px rgba(0, 0, 0, 0.1), inset 0 -4px 1px rgba(0, 0, 0, 0.2), inset 0 -2px 1px rgba(0, 0, 0, 0.1), 0px 7px 5px -4px rgba(255, 112, 26, 0.7);
+  -webkit-box-shadow: inset 0 -2px 1px #d36001, inset 0 -4px 1px #e06602, inset 0 -6px 1px rgba(255, 115, 0, 0.6), 0px 7px 6px -4px rgba(255, 112, 26, 0.8), inset 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 -2px 1px #d36001, inset 0 -4px 1px #e06602, inset 0 -6px 1px rgba(255, 115, 0, 0.6), 0px 7px 6px -4px rgba(255, 112, 26, 0.8), inset 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .btn-orange .fas {
@@ -168,6 +171,12 @@ h4 {
           justify-content: center;
   font-size: 2rem;
   border-radius: 50%;
+}
+
+.title {
+  font-size: 5rem;
+  color: #ffffff;
+  margin-bottom: 2.1rem;
 }
 
 #main-header {
@@ -296,6 +305,8 @@ h4 {
 #main-header #navbar .btndiv .btn {
   padding: .6rem 1rem .75rem;
   font-size: 1rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3392fe), to(#27d2fe));
+  background: linear-gradient(0deg, #3392fe, #27d2fe);
 }
 
 #main-header #navbar .btndiv .btn .fas {
@@ -321,12 +332,6 @@ h4 {
           justify-content: center;
 }
 
-#main-header #header-content #title {
-  font-size: 4.5rem;
-  color: #ffffff;
-  margin-bottom: 2rem;
-}
-
 #main-header #header-content .btndiv .btn {
   padding: 0.75rem 1.5rem 0.9rem;
 }
@@ -344,7 +349,6 @@ h4 {
 }
 
 #stories .container {
-  position: relative;
   padding: 8rem 2rem 4rem;
   overflow: unset;
 }
@@ -451,5 +455,27 @@ h4 {
 #bogo-school {
   height: 775px;
   background: url(../img/bogoschool-background.jpg) no-repeat center center/cover;
+}
+
+#bogo-school .container {
+  overflow: unset;
+  padding: 2rem 2rem 4rem;
+  height: 100%;
+}
+
+#bogo-school .container .bogo-school-content {
+  height: 90%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+#bogo-school .container .bogo-school-content .btn {
+  padding: 0.75rem 1.5rem 0.9rem;
 }
 /*# sourceMappingURL=style.css.map */
