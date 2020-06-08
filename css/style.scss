@@ -215,6 +215,11 @@
         position: relative;
         bottom: 3.1rem;
 
+        img {
+          width: 140px;
+
+        }
+
         h3 {
           margin-bottom: 1rem;
         }
@@ -227,7 +232,10 @@
         .btn {
           height: 3.6rem;
           width: 3.6rem;
-          font-size: 2.4rem;
+
+          .fas {
+            font-size: 1.8rem;
+          }
         }
       }
 
@@ -237,11 +245,15 @@
         border-radius: 15px;
         position: relative;
         box-shadow: 0px 7px 0px -4px rgba($color: #ffffff, $alpha: .6), 0px 10px 10px -5px rgba(0, 0, 0, 0.3);
+        transition: all .3s;
 
         img {
           position: absolute;
           right: 0;
           top: -2rem;
+          width: 125px;
+          transition: all .3s;
+
         }
 
         h3 {
@@ -250,10 +262,30 @@
           color: #5b73b1;
         }
 
+        &:hover {
+          box-shadow: 0px 7px 0px -4px rgba($color: #ffffff, $alpha: .6), 0px 10px 10px -5px rgba(0, 0, 0, 0.3), 0px 15px 18px -5px rgba(0, 0, 0, 0.1);
+          cursor: grab;
+
+          img {
+            transform: scale(1.1);
+          }
+
+          .btn-orange {
+            background: linear-gradient(0deg, #ff9640, #ffb746);
+            box-shadow: inset 0 -2px 1px rgba($color: #d36001, $alpha: 1), inset 0 -4px 1px rgba($color: #e06602, $alpha: 1), inset 0 -6px 1px rgba($color: #ff7300, $alpha: .6), 0px 10px 7px -4px rgba(255, 112, 26, .8), inset 0px 0px 1px 1px rgba($color: #000000, $alpha: .1);
+          }
+
+        }
+
         .btn {
           position: absolute;
           bottom: -1.7rem;
           left: 2.7rem;
+
+          .fas {
+            padding-left: 0rem;
+            font-weight: 900;
+          }
         }
       }
     }
@@ -280,7 +312,6 @@
 
       .btn {
         padding: 0.75rem 1.5rem 0.9rem;
-
       }
     }
 
