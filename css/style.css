@@ -201,6 +201,7 @@ h4 {
 
 #main-header #navbar #logo {
   font-size: 2rem;
+  cursor: pointer;
 }
 
 #main-header #navbar #logo p:first-child {
@@ -450,6 +451,8 @@ h4 {
   width: 125px;
   -webkit-transition: all .3s;
   transition: all .3s;
+  -webkit-filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.35));
+          filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.35));
 }
 
 #stories .container .apps-content .app h3 {
@@ -468,6 +471,8 @@ h4 {
 #stories .container .apps-content .app:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.3));
 }
 
 #stories .container .apps-content .app:hover .btn-orange {

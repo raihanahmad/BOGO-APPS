@@ -17,6 +17,7 @@
     // Logo
     #logo {
       font-size: 2rem;
+      cursor: pointer;
 
       p:first-child {
         line-height: 0.9;
@@ -253,7 +254,7 @@
           top: -2rem;
           width: 125px;
           transition: all .3s;
-
+          filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.35));
         }
 
         h3 {
@@ -268,6 +269,7 @@
 
           img {
             transform: scale(1.1);
+            filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.3));
           }
 
           .btn-orange {
