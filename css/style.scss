@@ -276,7 +276,7 @@
       background: #ffffff;
       position: absolute;
       height: 220px;
-      width: 100%;
+      width: 95%;
       bottom: -7rem;
       display: grid;
       grid-template-columns: 2fr 5fr 1fr;
@@ -357,13 +357,13 @@
 
 // Email Section
 #email-section {
-  height: 350px;
+  height: 370px;
   background: #2f5fff;
   border-top: solid 10px #0035e2;
   border-bottom: solid 10px #0035e2;
 
   .container {
-    padding: 2rem 2rem 5rem;
+    padding: 2rem 2rem 4.5rem;
     height: 100%;
     display: flex;
     align-items: flex-end;
@@ -380,13 +380,57 @@
 
       #email-content {
         width: 80%;
-        background: #0035e2;
+        background: #1949e7;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem 1rem 1rem 2rem;
+        padding: 1rem 3rem;
         border-radius: 50px;
+        box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3),
+          inset 0 -1px 2px rgba($color: #ffffff, $alpha: .3);
 
+        p {
+          font-size: 2.5rem;
+          color: #ffffff;
+          font-weight: 800;
+          position: relative;
+          bottom: 3px;
+        }
+
+        #email-div {
+          width: 60%;
+          position: relative;
+
+          #email {
+            width: 100%;
+            height: 3rem;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 2rem;
+            border: none;
+            outline: none;
+            border-radius: 50px;
+            background: #ffffff;
+            color: #5276f1;
+
+            &::placeholder {
+              color: #5276f1;
+            }
+          }
+
+          .btn {
+            background: linear-gradient(0deg, #68b122, #b4e744);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -1.9rem;
+
+            .fas {
+              padding: .2rem .6rem .2rem .8rem;
+              font-size: 2rem;
+            }
+          }
+        }
       }
 
     }
