@@ -445,7 +445,7 @@
 
 // Foooter Section
 #main-footer {
-  height: 110px;
+  height: 100%;
   background: #1949e7;
   display: flex;
   align-items: center;
@@ -454,6 +454,7 @@
 
   .container {
     width: 100%;
+    padding: 2rem;
 
     #footer-content {
       width: 100%;
@@ -462,21 +463,21 @@
       justify-content: space-between;
 
       #creator-copyright {
-        color: rgba($color: #ffffff, $alpha: .4);
+        color: rgba($color: #ffffff, $alpha: .5);
         font-size: .7rem;
         font-weight: 600;
 
         #creator {
           a {
-            color: rgba($color: #ffffff, $alpha: .4);
+            color: rgba($color: #ffffff, $alpha: .5);
             cursor: pointer;
             text-decoration: none;
-            border-bottom: 1px dotted rgba($color: #ffffff, $alpha: .4);
+            border-bottom: 1px dotted rgba($color: #ffffff, $alpha: .5);
             transition: all .3s ease;
 
             &:hover {
               color: rgba($color: #ffffff, $alpha: .8);
-              border-bottom: 1px solid rgba($color: #ffffff, $alpha: .8);
+              border-bottom: 1px solid rgba($color: #ffffff, $alpha: 1);
 
               &:active {
                 opacity: .7;
@@ -551,14 +552,46 @@
 
         a {
           margin-left: 1rem;
-          background: linear-gradient(0deg, #e3edff, #ffffff);
-          height: 40px;
-          width: 40px;
+          background: linear-gradient(0deg, #bed4fc, #ffffff);
+          height: 45px;
+          width: 45px;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
           text-decoration: none;
+          font-size: 1.3rem;
+          box-shadow: inset 0 -3px 2px rgba($color: #000000, $alpha: .25), inset 0px 0px 1px 1px rgba($color: #000000, $alpha: .1), inset 0 -1px 1px rgba($color: #000000, $alpha: .2), 0px 8px 15px -2px rgba(0, 0, 0, 0.5);
+          perspective: 1000px;
+          transition: all .3s;
+
+          &:hover {
+            box-shadow: inset 0 -3px 2px rgba($color: #000000, $alpha: .25), inset 0px 0px 1px 1px rgba($color: #000000, $alpha: .1), inset 0 -1px 1px rgba($color: #000000, $alpha: .2), 0px 10px 20px -2px rgba(0, 0, 0, 0.68);
+          }
+
+          &:first-child {
+            color: #3b5998;
+
+            &:hover i {
+              animation: popup-spinin .8s linear forwards;
+            }
+          }
+
+          &:nth-child(2) {
+            color: #1da1f2;
+
+            &:hover i {
+              animation: popup-spinin .8s linear;
+            }
+          }
+
+          &:nth-child(3) {
+            &:hover i {
+              animation: popup-spinin .8s linear;
+            }
+
+            color: #ff0000;
+          }
         }
       }
     }
