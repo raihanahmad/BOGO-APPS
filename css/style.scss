@@ -14,6 +14,11 @@
     align-items: center;
     padding: 1rem 0rem 2rem;
 
+    // Hamburger 
+    #hamburger {
+      display: none;
+    }
+
     // Navber Link
     #navlink {
       background: #3d6bff;
@@ -627,7 +632,7 @@
 }
 
 
-// PAD OR SMALLER
+// PAD OR SMALLER3
 @media (max-width: 980px) {
 
   // Main Header Section
@@ -805,8 +810,100 @@
 
 // MOBILE RESPONSIVE
 @media (max-width: 750px) {
-  .container {
-    overflow: hidden !important;
+
+  // Main Header Section
+  #main-header {
+    background: url(../img/showcase.jpg) no-repeat -200px center/cover;
+    height: 100vh;
+    text-transform: uppercase;
+    font-weight: 800;
+
+    // Navbar
+    #navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem 0rem 2rem;
+
+      // Hamburger 
+      #hamburger {
+        z-index: 10;
+        display: block;
+        background: #ffffff;
+        height: 4.3rem;
+        width: 4.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.1rem .8rem;
+        background: #3d6bff;
+        border-radius: 50%;
+        box-shadow: 0 0 2px 4px #7bbbbe;
+        transition: all .3s;
+        position: relative;
+
+        .a,
+        .b,
+        .c {
+          position: absolute !important;
+          height: 5px;
+          border-radius: 5px;
+          width: 60%;
+          background: #ffffff;
+          position: relative;
+          top: 32px;
+          left: 13.3px;
+          transition: all .3s;
+
+        }
+
+        .a {
+          top: 20px;
+        }
+
+        .c {
+          top: 44px;
+        }
+      }
+
+
+      // Navber Link
+      #navlink {
+        // display: none;
+        position: absolute;
+        top: 0rem;
+        left: 2rem;
+        padding-top: 3rem;
+        transition: all .6s;
+        transform: scale(0);
+        transform-origin: top left;
+
+        ul {
+
+          flex-direction: column;
+          width: 80vw;
+          padding: 3rem 1rem;
+
+          li:first-child {
+            padding-left: 2.1rem;
+          }
+
+          li:last-child {
+            padding-right: 0rem;
+          }
+        }
+      }
+
+      // Navbar BTN
+      .btndiv {
+        display: none;
+      }
+    }
+
+    // Header Content
+    #header-content {
+      height: 80vh;
+    }
   }
 
   // Stories Section
@@ -863,4 +960,92 @@
       }
     }
   }
+
+  // BOGO School Section
+  #bogo-school {
+    height: 760px;
+    background: url(../img/bogoschool-background.jpg) no-repeat -250px center/cover;
+
+    .container {
+      overflow: unset !important;
+
+      // School Content
+      .bogo-school-content {
+        height: 65%;
+      }
+
+      // App
+      .app-div {
+        height: 340px;
+        width: 85%;
+        padding: 4.5rem 1.5rem 1rem;
+
+        div:first-child {
+          .app-logo {
+            top: -100px;
+
+            img {
+              width: 150px;
+            }
+          }
+
+        }
+
+        .app-content {
+
+          &>div {
+            p {
+              font-size: 1rem;
+              margin-right: 1rem;
+            }
+
+            &>div {
+              font-size: .8rem;
+            }
+
+          }
+
+          p:last-child {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  // Email Section
+  #email-section {
+    height: 460px;
+
+    .container {
+      padding: 2rem 2rem 4rem;
+
+      #email-section-div {
+        flex-direction: column;
+        justify-content: unset;
+
+        .logo {
+          display: none;
+        }
+
+        #email-content {
+          width: 100%;
+          flex-direction: column;
+          text-align: center;
+          padding: 2rem 1.5rem;
+
+          p {
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+          }
+
+          #email-div {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+
 }

@@ -231,3 +231,31 @@ a {
   color: #ffffff;
   margin-bottom: 2.1rem;
 }
+
+
+// MOBILE RESPONSIVE
+@media (max-width: 750px) {
+
+  .container {
+    overflow: hidden !important;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .btn-orange {
+    font-size: 1.3rem;
+
+    .fas {
+      font-size: 1.1rem;
+      position: relative;
+      bottom: 2px;
+    }
+  }
+
+  .btn-blue {
+    font-size: 1.3rem;
+  }
+
+}
