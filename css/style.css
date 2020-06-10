@@ -1148,4 +1148,10 @@ a {
     display: none;
   }
 }
+
+@media (max-width: 750px) {
+  body {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
