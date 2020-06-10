@@ -1009,19 +1009,6 @@ a {
   }
   #main-header #header-content {
     height: 60vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: left;
-        -ms-flex-align: left;
-            align-items: left;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   #stories #story-section {
     height: 450px;
@@ -1150,8 +1137,47 @@ a {
 }
 
 @media (max-width: 750px) {
-  body {
-    display: none;
+  .container {
+    overflow: hidden !important;
+  }
+  #stories #story-section {
+    height: 43%;
+  }
+  #stories .container {
+    padding: 4rem 2rem;
+    overflow: unset;
+  }
+  #stories .container #story-div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-column-gap: 0rem;
+    padding-bottom: 3rem;
+  }
+  #stories .container #story-div #story-img {
+    position: unset;
+    margin-bottom: 1.6rem;
+  }
+  #stories .container #story-div #story-img img {
+    width: 100%;
+  }
+  #stories .container #story-div #story-content {
+    padding-left: 0rem;
+    text-align: center;
+  }
+  #stories .container #story-div #story-content h1 {
+    margin-bottom: 1.5rem;
+  }
+  #stories .container #story-div #story-content p {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  #stories .container .apps-content {
+    padding: 2rem 0rem;
+  }
+  #stories .container .apps-content .app {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
