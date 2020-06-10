@@ -601,7 +601,7 @@
 
 // MEDIA QUERY FOR RESPONSIVE
 // TAB
-@media (min-height: 1300px) {
+@media (min-height: 1100px) {
   #main-header {
     height: 1100px;
 
@@ -665,6 +665,28 @@
       padding: 8rem 2rem 4rem;
       overflow: hidden;
 
+      // STORY
+      #story-div {
+
+        #story-img {
+          position: relative;
+          bottom: 3rem;
+          right: 6rem;
+
+          img {
+            width: 120%;
+          }
+        }
+
+        #story-content {
+          padding-left: 2rem;
+
+          p {
+            width: 90%;
+          }
+        }
+      }
+
       // APPS
       .apps-content {
         padding: 3rem;
@@ -720,86 +742,56 @@
 
       // App
       .app-div {
-        background: #ffffff;
-        position: absolute;
-        height: 220px;
-        width: 95%;
-        bottom: -7rem;
-        display: grid;
-        grid-template-columns: 2fr 5fr 1fr;
-        border-radius: 30px;
-        justify-content: center;
+        height: 300px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        box-shadow: 0px 14px 0px -8px #e1e1e1,
-          0px 27px 0px -16px #bbbbbb,
-          0px 15px 15px -15px rgba(0, 0, 0, 0.2),
-          0px 20px 20px -20px rgba(0, 0, 0, 0.2),
-          0px 30px 30px -25px rgba(0, 0, 0, 0.2),
-          0px 60px 35px -25px rgba(0, 0, 0, 0.3);
+        padding: 3.5rem 1.5rem 1rem;
 
         div:first-child {
           .app-logo {
-            background-color: #ffffff;
-            position: absolute;
-            padding: 1rem;
-            border-radius: 50%;
-            top: -4rem;
-            left: -2rem;
-
-            img {
-              width: 250px;
-              border-radius: 50%;
-
-            }
+            top: -160px;
+            left: 50%;
           }
         }
-
 
         .app-content {
-          &>div {
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            color: #5569a8;
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-
-            p {
-              margin-right: 2rem;
-            }
-
-            div {
-              color: #ffb621;
-              font-size: 1rem;
-
-              .fas {
-                margin-right: .1rem;
-              }
-            }
-          }
 
           p:last-child {
-            font-size: 1.8rem;
-            font-weight: 800;
-            line-height: 1.33;
-            color: #545569;
-          }
-        }
-
-        div:last-child {
-          .btn {
-            height: 4.2rem;
-            width: 4.2rem;
-
-            .fas {
-              font-size: 1.6rem;
-              padding: 0;
-            }
+            margin-bottom: 1.3rem;
           }
         }
       }
     }
   }
+
+  // Email Section
+  #email-section {
+    height: 400px;
+
+    .container {
+      padding: 2rem 2rem 4.5rem;
+
+      #email-section-div {
+        flex-direction: column;
+        justify-content: unset;
+
+        .logo {
+          display: none;
+        }
+
+        #email-content {
+          width: 100%;
+
+          #email-div {
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
+
+
 
 }

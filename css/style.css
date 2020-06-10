@@ -977,7 +977,7 @@ a {
           animation: popup-spinin .8s linear;
 }
 
-@media (min-height: 1300px) {
+@media (min-height: 1100px) {
   #main-header {
     height: 1100px;
   }
@@ -1029,6 +1029,20 @@ a {
   #stories .container {
     padding: 8rem 2rem 4rem;
     overflow: hidden;
+  }
+  #stories .container #story-div #story-img {
+    position: relative;
+    bottom: 3rem;
+    right: 6rem;
+  }
+  #stories .container #story-div #story-img img {
+    width: 120%;
+  }
+  #stories .container #story-div #story-content {
+    padding-left: 2rem;
+  }
+  #stories .container #story-div #story-content p {
+    width: 90%;
   }
   #stories .container .apps-content {
     padding: 3rem;
@@ -1085,75 +1099,50 @@ a {
             justify-content: left;
   }
   #bogo-school .container .app-div {
-    background: #ffffff;
-    position: absolute;
-    height: 220px;
-    width: 95%;
-    bottom: -7rem;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 2fr 5fr 1fr;
-        grid-template-columns: 2fr 5fr 1fr;
-    border-radius: 30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-shadow: 0px 14px 0px -8px #e1e1e1, 0px 27px 0px -16px #bbbbbb, 0px 15px 15px -15px rgba(0, 0, 0, 0.2), 0px 20px 20px -20px rgba(0, 0, 0, 0.2), 0px 30px 30px -25px rgba(0, 0, 0, 0.2), 0px 60px 35px -25px rgba(0, 0, 0, 0.3);
-            box-shadow: 0px 14px 0px -8px #e1e1e1, 0px 27px 0px -16px #bbbbbb, 0px 15px 15px -15px rgba(0, 0, 0, 0.2), 0px 20px 20px -20px rgba(0, 0, 0, 0.2), 0px 30px 30px -25px rgba(0, 0, 0, 0.2), 0px 60px 35px -25px rgba(0, 0, 0, 0.3);
-  }
-  #bogo-school .container .app-div div:first-child .app-logo {
-    background-color: #ffffff;
-    position: absolute;
-    padding: 1rem;
-    border-radius: 50%;
-    top: -4rem;
-    left: -2rem;
-  }
-  #bogo-school .container .app-div div:first-child .app-logo img {
-    width: 250px;
-    border-radius: 50%;
-  }
-  #bogo-school .container .app-div .app-content > div {
+    height: 300px;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: #5569a8;
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    padding: 3.5rem 1.5rem 1rem;
   }
-  #bogo-school .container .app-div .app-content > div p {
-    margin-right: 2rem;
-  }
-  #bogo-school .container .app-div .app-content > div div {
-    color: #ffb621;
-    font-size: 1rem;
-  }
-  #bogo-school .container .app-div .app-content > div div .fas {
-    margin-right: .1rem;
+  #bogo-school .container .app-div div:first-child .app-logo {
+    top: -160px;
+    left: 50%;
   }
   #bogo-school .container .app-div .app-content p:last-child {
-    font-size: 1.8rem;
-    font-weight: 800;
-    line-height: 1.33;
-    color: #545569;
+    margin-bottom: 1.3rem;
   }
-  #bogo-school .container .app-div div:last-child .btn {
-    height: 4.2rem;
-    width: 4.2rem;
+  #email-section {
+    height: 400px;
   }
-  #bogo-school .container .app-div div:last-child .btn .fas {
-    font-size: 1.6rem;
-    padding: 0;
+  #email-section .container {
+    padding: 2rem 2rem 4.5rem;
+  }
+  #email-section .container #email-section-div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  #email-section .container #email-section-div .logo {
+    display: none;
+  }
+  #email-section .container #email-section-div #email-content {
+    width: 100%;
+  }
+  #email-section .container #email-section-div #email-content #email-div {
+    width: 55%;
   }
 }
 /*# sourceMappingURL=style.css.map */
