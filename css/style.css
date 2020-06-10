@@ -1005,10 +1005,10 @@ a {
     padding: 1rem 0rem;
   }
   #main-header #navbar #navlink {
-    margin: 1.5rem 0;
+    margin: 2rem 0;
   }
   #main-header #header-content {
-    height: 70vh;
+    height: 60vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1045,7 +1045,7 @@ a {
     width: 90%;
   }
   #stories .container .apps-content {
-    padding: 3rem;
+    padding: 2rem 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1143,6 +1143,9 @@ a {
   }
   #email-section .container #email-section-div #email-content #email-div {
     width: 55%;
+  }
+  #main-footer .container #footer-content #footer-link {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -640,13 +640,13 @@
       padding: 1rem 0rem;
 
       #navlink {
-        margin: 1.5rem 0;
+        margin: 2rem 0;
       }
     }
 
     // Showcase Content
     #header-content {
-      height: 70vh;
+      height: 60vh;
       display: flex;
       flex-direction: column;
       align-items: left;
@@ -689,7 +689,7 @@
 
       // APPS
       .apps-content {
-        padding: 3rem;
+        padding: 2rem 3rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -787,6 +787,20 @@
           #email-div {
             width: 55%;
           }
+        }
+      }
+    }
+  }
+
+  // Foooter Section
+  #main-footer {
+
+    .container {
+
+      #footer-content {
+
+        #footer-link {
+          display: none;
         }
       }
     }
