@@ -1,5 +1,9 @@
 @import 'utilities';
 
+#device-block {
+  display: none;
+}
+
 // Main Header Section
 #main-header {
   background: url(../img/showcase.jpg) no-repeat center center/cover;
@@ -967,7 +971,7 @@
     background: url(../img/bogoschool-background.jpg) no-repeat -250px center/cover;
 
     .container {
-      overflow: unset !important;
+      overflow: auto !important;
 
       // School Content
       .bogo-school-content {
@@ -1048,4 +1052,30 @@
   }
 
 
+}
+
+// DEVICE BLOCK
+@media (max-width: 350px) {
+
+  header,
+  footer,
+  section,
+  .container {
+    display: none;
+  }
+
+  #main-header {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #device-block {
+      display: block;
+      color: #ffffff;
+      font-size: 1.5rem;
+      text-align: center;
+      line-height: 1.4;
+    }
+  }
 }
