@@ -1305,7 +1305,7 @@ a {
     background: url(../img/bogoschool-background.jpg) no-repeat -250px center/cover;
   }
   #bogo-school .container {
-    overflow: auto !important;
+    overflow: unset !important;
   }
   #bogo-school .container .bogo-school-content {
     height: 65%;

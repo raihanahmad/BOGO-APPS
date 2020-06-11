@@ -971,7 +971,7 @@
     background: url(../img/bogoschool-background.jpg) no-repeat -250px center/cover;
 
     .container {
-      overflow: auto !important;
+      overflow: unset !important;
 
       // School Content
       .bogo-school-content {
