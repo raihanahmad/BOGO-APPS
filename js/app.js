@@ -20,18 +20,14 @@ const hamburger = document.querySelector("#hamburger"),
   navber = document.querySelector("#navlink"),
   lineA = document.querySelector("#hamburger .a"),
   lineB = document.querySelector("#hamburger .b"),
-  lineC = document.querySelector("#hamburger .c");
+  lineC = document.querySelector("#hamburger .c"),
+  UIbody = document.querySelector("body");
 
 hamburger.addEventListener("click", function () {
   hamburger.style.boxShadow = "0 0 2px 4px #7bbbbe";
 
   if (navber.style.transform === "scale(1)") {
-    navber.style.transform = "scale(0)";
-    lineB.style.transform = "unset";
-    lineA.style.transform = "unset";
-    lineA.style.top = "20px";
-    lineC.style.transform = "unset";
-    lineC.style.top = "44px";
+    hamburgerHidden();
   } else {
     navber.style.transform = "scale(1)";
     hamburger.style.boxShadow = "unset";
@@ -40,6 +36,7 @@ hamburger.addEventListener("click", function () {
     lineA.style.top = "32px";
     lineC.style.transform = "rotate(130deg)";
     lineC.style.top = "32px";
+    UIbody.style.overflow = "hidden";
 
     document.querySelector("#navlink").addEventListener("click", function (e) {
       if (e.target.classList.contains("link")) {
@@ -49,7 +46,18 @@ hamburger.addEventListener("click", function () {
         lineA.style.top = "20px";
         lineC.style.transform = "unset";
         lineC.style.top = "44px";
+        UIbody.style.overflow = "unset";
       }
     });
   }
 });
+
+function hamburgerHidden() {
+  navber.style.transform = "scale(0)";
+  lineB.style.transform = "unset";
+  lineA.style.transform = "unset";
+  lineA.style.top = "20px";
+  lineC.style.transform = "unset";
+  lineC.style.top = "44px";
+  UIbody.style.overflow = "show";
+}

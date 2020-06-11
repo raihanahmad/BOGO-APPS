@@ -881,6 +881,8 @@
         transition: all .6s;
         transform: scale(0);
         transform-origin: top left;
+        box-shadow: 0 0 2px 4px #7bbbbe, 0 0 0 100vh rgba(0, 0, 0, 0.5);
+
 
         ul {
 
