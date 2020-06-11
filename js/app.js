@@ -40,13 +40,7 @@ hamburger.addEventListener("click", function () {
 
     document.querySelector("#navlink").addEventListener("click", function (e) {
       if (e.target.classList.contains("link")) {
-        navber.style.transform = "scale(0)";
-        lineB.style.transform = "unset";
-        lineA.style.transform = "unset";
-        lineA.style.top = "20px";
-        lineC.style.transform = "unset";
-        lineC.style.top = "44px";
-        UIbody.style.overflow = "unset";
+        hamburgerHidden();
       }
     });
   }
@@ -59,5 +53,5 @@ function hamburgerHidden() {
   lineA.style.top = "20px";
   lineC.style.transform = "unset";
   lineC.style.top = "44px";
-  UIbody.style.overflow = "show";
+  UIbody.style.overflow = "unset";
 }
